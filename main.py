@@ -151,7 +151,7 @@ xml_display.config(yscrollcommand=scroll_y.set, xscrollcommand=scroll_x.set)
 
 def open_readme():
     script_dir = os.path.dirname(sys.argv[0])
-    readme_path = os.path.join(script_dir, "README.txt")
+    readme_path = os.path.join(script_dir, "README.md")
     os.system(f"start {readme_path}")
 
 
