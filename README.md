@@ -8,4 +8,4 @@ Check that you got the right format of the NP Communication ID, it should look l
 
 github https://github.com/lKetaPanl
 
-discord https://discord.gg/tftYeYwxng 
+discord https://discord.gg/yUEHhAk7jn
