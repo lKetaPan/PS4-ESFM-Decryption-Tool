@@ -2,17 +2,14 @@ import os
 from PyInstaller.__main__ import run
 
 if __name__ == "__main__":
-    # Pfad zum Python-Skript
-    script_path = r"C:\Users\proCom\Desktop\decryptesfmfile\esfm_decryption.py"
-
-    # Überprüfe, ob das Skript existiert
+    
+    script_path = r"C:\your\path\to\main.py"
+    
     if not os.path.isfile(script_path):
-        print(f"Fehler: Das Skript '{script_path}' existiert nicht.")
+        print(f"ERROR: The script '{script_path}' is not existing.")
     else:
-        # Verzeichnis des Skripts
         script_dir = os.path.dirname(script_path)
         
-        # Führe PyInstaller aus, um die ausführbare Datei zu erstellen
         opts = ['--onefile', '--noconsole', '--distpath', script_dir, script_path]
 
         run(opts)
